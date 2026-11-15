@@ -3,7 +3,7 @@
 
   var root = document.documentElement;
   var defaultTheme = root.getAttribute('data-default-theme') || 'light';
-  var storageKey = 'na_theme_' + (root.getAttribute('data-site-id') || 'site');
+  var storageKey = 'na_theme_' + (root.getAttribute('data-site-id') || 'graphic');
 
   function applyTheme(theme) {
     root.setAttribute('data-theme', theme);
@@ -55,36 +55,38 @@
       });
     }
 
-    // Category filter tabs (if present)
+    // Category filter tabs with WAI-ARIA aria-selected
     var filterBtns = document.querySelectorAll('[data-filter-btn]');
     var filterItems = document.querySelectorAll('[data-filter-item]');
     if (filterBtns.length > 0 && filterItems.length > 0) {
       filterBtns.forEach(function (btn) {
         btn.addEventListener('click', function () {
           var category = btn.getAttribute('data-filter-btn');
-          filterBtns.forEach(function (b) { b.classList.remove('is-active'); });
+          filterBtns.forEach(function (b) {
+            b.classList.remove('is-active');
+            b.setAttribute('aria-selected', 'false');
+          });
           btn.classList.add('is-active');
+          btn.setAttribute('aria-selected', 'true');
           filterItems.forEach(function (item) {
             var cats = (item.getAttribute('data-filter-item') || '').split(' ');
-            if (category === 'all' || cats.indexOf(category) !== -1) {
-              item.style.display = '';
-            } else {
-              item.style.display = 'none';
-            }
+            item.style.display = (category === 'all' || cats.indexOf(category) !== -1) ? '' : 'none';
           });
         });
       });
     }
 
-    // Lightbox modal for Canva portfolio visuals
+    // Accessible Lightbox modal with focus management
     var lightbox = document.getElementById('portfolio-lightbox');
     var lightboxImg = document.getElementById('lightbox-img');
     var lightboxTitle = document.getElementById('lightbox-title');
     var lightboxDesc = document.getElementById('lightbox-desc');
     var lightboxClose = document.getElementById('lightbox-close');
+    var lastFocusedEl = null;
 
-    function openLightbox(src, title, desc) {
+    function openLightbox(src, title, desc, triggerEl) {
       if (!lightbox || !lightboxImg) return;
+      lastFocusedEl = triggerEl || document.activeElement;
       lightboxImg.src = src;
       lightboxImg.alt = title || 'Portfolio visual preview';
       if (lightboxTitle) lightboxTitle.textContent = title || '';
@@ -92,13 +94,17 @@
       lightbox.classList.add('is-open');
       lightbox.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+      if (lightboxClose) lightboxClose.focus();
     }
 
     function closeLightbox() {
-      if (!lightbox) return;
+      if (!lightbox || !lightbox.classList.contains('is-open')) return;
       lightbox.classList.remove('is-open');
       lightbox.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
+      if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
+        lastFocusedEl.focus();
+      }
     }
 
     document.querySelectorAll('[data-lightbox-src]').forEach(function (el) {
@@ -107,7 +113,8 @@
         openLightbox(
           el.getAttribute('data-lightbox-src'),
           el.getAttribute('data-lightbox-title'),
-          el.getAttribute('data-lightbox-desc')
+          el.getAttribute('data-lightbox-desc'),
+          el
         );
       });
     });
@@ -124,7 +131,7 @@
       if (e.key === 'Escape') closeLightbox();
     });
 
-    // FormSubmit AJAX handler
+    // FormSubmit AJAX handler with accessible status
     var contactForm = document.getElementById('contact-form');
     var formStatus = document.getElementById('form-status');
     var submitBtn = document.getElementById('submit-btn');
@@ -151,7 +158,7 @@
             if (response.ok) {
               contactForm.reset();
               if (formStatus) {
-                formStatus.textContent = 'Thank you! Your message has been sent directly to Noel Ayala (noeljedayala@gmail.com).';
+                formStatus.textContent = 'Thank you! Your brief has been sent directly to Noel Ayala (noeljedayala@gmail.com).';
                 formStatus.className = 'form-status is-success';
               }
             } else {
