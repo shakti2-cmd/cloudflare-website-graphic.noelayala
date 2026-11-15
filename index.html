@@ -1,674 +1,495 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-site-id="graphic" data-default-theme="light" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noel Ayala — Digital Graphic Designer &amp; Visual Production</title>
-  <meta name="description" content="Portfolio &amp; profile of Noel Ayala — Digital Graphic Designer with 10+ years creating social campaigns, brand assets, print layouts, and short-form video for global clients." />
-  <meta property="og:title" content="Noel Ayala — Digital Graphic Designer &amp; Visual Production" />
-  <meta property="og:description" content="Portfolio &amp; profile of Noel Ayala — Digital Graphic Designer with 10+ years creating social campaigns, brand assets, print layouts, and short-form video for global clients." />
-  <meta property="og:type" content="profile" />
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  />
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem("noel_resume_theme");
-        if (t === "light" || t === "dark") {
-          document.documentElement.setAttribute("data-theme", t);
-        }
-      } catch (e) {}
-    })();
-  </script>
-  <link rel="stylesheet" href="./styles.css?v=1" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Noel Ayala",
-      "jobTitle": "Graphic Design",
-      "email": "mailto:noeljedayala@gmail.com",
-      "telephone": "+63 927 865 2574",
-      "url": "https://graphic.noeljedayala.workers.dev",
-      "sameAs": ["https://github.com/shakti2-cmd"],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Tagum City",
-        "addressRegion": "Davao Region",
-        "addressCountry": "PH"
-      },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Informatics International College"
-      }
-    }
-  </script>
-  <script src="./app.js?v=1" defer></script>
+  <title>Noel Ayala — Senior Graphic Designer & Brand Identity Portfolio</title>
+  <meta name="description" content="2026 Visual Design Portfolio of Noel Ayala: Brand Identity, Retail Packaging, Print Collateral, Social Ad Creatives, and Manual Photo Retouching." />
+  <link rel="canonical" href="https://graphic.noeljedayala.workers.dev/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Noel Ayala — Senior Graphic Designer & Brand Identity Portfolio" />
+  <meta property="og:description" content="2026 Visual Design Portfolio of Noel Ayala: Brand Identity, Retail Packaging, Print Collateral, Social Ad Creatives, and Manual Photo Retouching." />
+  <meta property="og:url" content="https://graphic.noeljedayala.workers.dev/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <!-- SPECIALTY ECOSYSTEM SWITCHER -->
+  <div class="eco-bar" role="navigation" aria-label="Noel Ayala Specialty Portfolios">
+    <div class="eco-bar-inner">
+      <span class="eco-label">Noel Ayala Portfolios //</span>
+      <div class="eco-links">
+        <a href="https://resume.noeljedayala.workers.dev/" class="eco-link">Main Resume</a>
+          <a href="https://graphic.noeljedayala.workers.dev/" class="eco-link is-active" aria-current="page">Graphic Design</a>
+          <a href="https://webdev.noeljedayala.workers.dev/" class="eco-link">Web Development</a>
+          <a href="https://automation.noeljedayala.workers.dev/" class="eco-link">AI & Automation</a>
+          <a href="https://socmed.noeljedayala.workers.dev/" class="eco-link">Social Media</a>
+          <a href="https://assistance.noeljedayala.workers.dev/" class="eco-link">Executive VA</a>
+          <a href="https://digitalop.noeljedayala.workers.dev/" class="eco-link">Digital Ops</a>
+      </div>
+    </div>
+  </div>
 
+  <!-- STICKY HEADER -->
   <header class="site-header">
-    <div class="container nav-bar">
-      <a class="brand-link" href="#summary" aria-label="Noel Ayala home">
-        <span class="brand-mark" aria-hidden="true">NA</span>
-        <span class="brand-text">
-          <span class="brand-name">Noel Ayala</span>
-          <span class="brand-role">Graphic Design</span>
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">NA</span>
+        <span>
+          Noel Ayala
+          <span class="brand-sub">Visual Design & Brand Studio</span>
         </span>
       </a>
 
-      <nav aria-label="Primary sections">
-        <ul class="nav-links">
-          <li><a class="nav-link is-active" href="#summary">Summary</a></li>
-          <li><a class="nav-link" href="#experience">Experience</a></li>
-          <li><a class="nav-link" href="#stack">Capabilities</a></li>
-          <li><a class="nav-link" href="#showcase">Drafts</a></li>
-          <li><a class="nav-link" href="#trust">Trust</a></li>
-          <li><a class="nav-link" href="#booking">Book</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary Navigation">
+        <a href="#portfolio" class="nav-link">Portfolio Plates</a>
+            <a href="#resume" class="nav-link">Creative Resume</a>
+            <a href="#testimonials" class="nav-link">Client Reviews</a>
+            <a href="#contact" class="nav-link">Hire / Book Call</a>
       </nav>
 
-      <div class="nav-actions">
-        <button
-          id="theme-toggle"
-          class="btn btn-icon"
-          type="button"
-          aria-pressed="false"
-          aria-label="Switch to Minimal light theme"
-          title="Switch theme"
-        >
-          <svg id="icon-sun" class="icon icon-circle" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
-          </svg>
-          <svg id="icon-moon" class="icon" viewBox="0 0 24 24" aria-hidden="true" style="display: none;">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path>
-          </svg>
+      <div class="header-actions">
+        <button type="button" id="theme-toggle" class="btn btn-secondary btn-sm">
+          <span class="theme-label">Toggle Theme</span>
         </button>
-
-        <button class="btn btn-ghost btn-print" type="button" data-print-resume>
-          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 9V2h12v7"></path>
-            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-            <rect x="6" y="14" width="12" height="8"></rect>
-          </svg>
-          <span>Print CV</span>
-        </button>
-
-        <a class="btn btn-primary" href="mailto:noeljedayala@gmail.com">
-          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-          </svg>
-          <span>Email</span>
-        </a>
-
-        <button
-          id="mobile-menu-btn"
-          class="btn btn-icon mobile-menu-btn"
-          type="button"
-          aria-expanded="false"
-          aria-controls="mobile-drawer"
-          aria-label="Toggle navigation menu"
-        >
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M4 7h16M4 12h16M4 17h16"></path>
-          </svg>
+        <a href="#contact" class="btn btn-primary btn-sm">Hire / Book Call</a>
+        <button type="button" id="mobile-menu-btn" class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu">
+          Menu
         </button>
       </div>
-    </div>
-
-    <div id="mobile-drawer" class="mobile-drawer" hidden>
-      <ul class="mobile-drawer-list">
-        <li><a class="mobile-drawer-link is-active" href="#summary">Summary</a></li>
-        <li><a class="mobile-drawer-link" href="#experience">Experience</a></li>
-        <li><a class="mobile-drawer-link" href="#stack">Capabilities</a></li>
-        <li><a class="mobile-drawer-link" href="#showcase">Draft Portfolio</a></li>
-        <li><a class="mobile-drawer-link" href="#trust">Client Trust &amp; Credentials</a></li>
-        <li><a class="mobile-drawer-link" href="#booking">Book a Call</a></li>
-        <li><a class="mobile-drawer-link" href="#contact">Contact Form</a></li>
-        <li>
-          <button class="btn btn-secondary" type="button" data-print-resume style="width: 100%; margin-top: 6px;">
-            Print / Save Resume PDF
-          </button>
-        </li>
-      </ul>
     </div>
   </header>
 
-  <main id="main-content">
-    <section id="summary" class="hero-section">
+  <main id="top">
+
+    <!-- HERO: VOLT STUDIO GALLERY -->
+    <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="draft-banner">
-            <span>DRAFT v0.1 &bull; Specialty Portfolio — Placeholders ready for final media</span>
-          </div>
-
-          <div class="eyebrow-pill">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span>Digital Graphic Designer · 10+ Years Experience</span>
-          </div>
-
-          <h1 class="hero-title">Noel Ayala</h1>
-          <p class="hero-subtitle">Marketing graphics, print &amp; editorial layouts, e-commerce visuals, and short-form video editing.</p>
-          <p class="hero-summary">Creative and detail-oriented Graphic Designer with over 10 years of experience producing digital content, marketing collateral, social media graphics, website assets, and visual branding for international clients across the USA, UK, Australia, and the Philippines.</p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#booking">
-              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="3" y="4" width="18" height="18" rx="2"></rect>
-                <path d="M16 2v4M8 2v4M3 10h18"></path>
-              </svg>
-              <span>Book a Call</span>
-            </a>
-
-            <a class="btn btn-secondary" href="mailto:noeljedayala@gmail.com">
-              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-              </svg>
-              <span>Email Noel</span>
-            </a>
-
-            <button class="btn btn-secondary" type="button" data-copy-email>
-              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="9" y="9" width="13" height="13" rx="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              <span data-copy-label>Copy Email</span>
-            </button>
-
-            <a
-              class="btn btn-ghost"
-              href="https://resume.noeljedayala.workers.dev"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span>Master CV</span>
-            </a>
-          </div>
-
-          <div class="hero-meta">
-            <span class="meta-item">
-              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                <circle class="icon-circle" cx="12" cy="10" r="3"></circle>
-              </svg>
-              <span>Tagum City, Davao Region, PH</span>
-            </span>
-            <span class="meta-item">
-              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              <a class="meta-link" href="tel:+639278652574">+63 927 865 2574</a>
-            </span>
-            <span class="meta-item">
-              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-              </svg>
-              <a class="meta-link" href="mailto:noeljedayala@gmail.com">noeljedayala@gmail.com</a>
-            </span>
-          </div>
-        </div>
-
-        <aside class="manifest-card" aria-label="Specialty profile snapshot">
-          <div class="manifest-header">
-            <span class="manifest-title">Specialty Snapshot</span>
-            <span class="manifest-badge">Design · 2012–Present</span>
-          </div>
-          <div class="manifest-list">
-            <div class="manifest-row">
-              <span class="manifest-key">Specialty</span>
-              <span class="manifest-val">
-                Brand, Social &amp; Print Production
-                <span class="manifest-sub">Photoshop, InDesign, Canva, Affinity Suite &amp; Figma</span>
-              </span>
-            </div>
-            <div class="manifest-row">
-              <span class="manifest-key">Video / Motion</span>
-              <span class="manifest-val">
-                CapCut &amp; DaVinci Resolve
-                <span class="manifest-sub">Short-form reels, promos &amp; campaign cuts</span>
-              </span>
-            </div>
-            <div class="manifest-row">
-              <span class="manifest-key">AI Workflow</span>
-              <span class="manifest-val">
-                AI-Assisted Design Pipelines
-                <span class="manifest-sub">Rapid ideation, asset prep &amp; batch variants</span>
-              </span>
-            </div>
-            <div class="manifest-row">
-              <span class="manifest-key">Featured Work</span>
-              <span class="manifest-val">
-                UNDP Mindanao Timeline
-                <span class="manifest-sub">Digitized Toym Imao artwork for classrooms &amp; print</span>
-              </span>
-            </div>
-            <div class="manifest-row">
-              <span class="manifest-key">Global Reach</span>
-              <span class="manifest-val">
-                USA · UK · Australia · PH
-                <span class="manifest-sub">10+ years remote freelance visual delivery</span>
-              </span>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="experience" class="resume-section">
-      <div class="container section-grid">
-        <div class="section-rail">
-          <span class="section-kicker">01 / Experience</span>
-          <h2 class="section-heading">Relevant History</h2>
-          <p class="section-note">Over a decade delivering campaign graphics, storefront visuals, editorial print layouts, and short-form video for brands and institutions.</p>
-        </div>
-
-        <div class="timeline-list">
-          <article class="experience-card is-current" data-reveal>
-            <span class="timeline-node" aria-hidden="true"></span>
-            <div class="role-header">
-              <h3 class="role-title">Freelance Digital Graphic Designer</h3>
-              <span class="role-date">2012 – Present</span>
-            </div>
-            <div class="role-org">Self-Employed · International Remote Clients (USA, UK, Australia, PH)</div>
-            <ul class="role-bullets">
-              <li>Designed social media graphics, digital advertisements, pitch decks, and promotional materials for international clients.</li>
-              <li>Produced visual assets for websites, e-commerce storefronts (Retrospec, Oliver Logan, DD Apparel LLC), and multi-channel launches.</li>
-              <li>Edited short-form videos and motion creatives using CapCut and DaVinci Resolve for brand marketing campaigns.</li>
-              <li>Digitized Toym Imao&#x27;s graphic artwork for the Mindanao Timeline classroom tarpaulin and teacher resource book (published 2017 by CEAP, World Bank, Sacred Springs Dialogue Institute &amp; Mindanews).</li>
-            </ul>
-            <div class="role-tags" aria-label="Skills and engagements">
-              <span class="chip">Adobe Photoshop</span>
-              <span class="chip">Adobe InDesign</span>
-              <span class="chip">Affinity Suite</span>
-              <span class="chip">Canva</span>
-              <span class="chip">CapCut</span>
-              <span class="chip">DaVinci Resolve</span>
-            </div>
-          </article>
-
-          <article class="experience-card" data-reveal>
-            <span class="timeline-node" aria-hidden="true"></span>
-            <div class="role-header">
-              <h3 class="role-title">Digital Production &amp; Brand Support Specialist</h3>
-              <span class="role-date">2012 – 2024</span>
-            </div>
-            <div class="role-org">Cultural Foundations, Turf Clubs &amp; Retail Brands</div>
-            <ul class="role-bullets">
-              <li>Created marketing collateral, event graphics, and publication layouts for Shoalhaven City Turf Club (Australia), Erehwon Center for the Arts, Daloy ng Buhay, Inc., and NCCA.</li>
-              <li>Supported corporate and consumer visual campaigns for brands including Williamson-Dickie (Dickies), Anheuser-Busch (Budweiser), and 3G&#x27;s Vino LLC.</li>
-            </ul>
-            <div class="role-tags" aria-label="Skills and engagements">
-              <span class="chip">Shoalhaven City Turf Club</span>
-              <span class="chip">Erehwon Center for the Arts</span>
-              <span class="chip">Dickies USA</span>
-              <span class="chip">Budweiser USA</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="stack" class="resume-section">
-      <div class="container section-grid">
-        <div class="section-rail">
-          <span class="section-kicker">02 / Capabilities</span>
-          <h2 class="section-heading">Tools &amp; Stack</h2>
-          <p class="section-note">Industry-standard raster, vector, page-layout, and video editing software paired with AI-assisted production workflows.</p>
-        </div>
-
-        <div class="stack-grid">
-          <article class="stack-card" data-reveal>
-            <div class="stack-card-head">
-              <div class="stack-icon-wrap" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
-                </svg>
-              </div>
-              <h3 class="stack-card-title">Design &amp; Layout</h3>
-            </div>
-            <ul class="stack-items">
-              <li class="stack-item">Adobe Photoshop</li>
-              <li class="stack-item">Adobe InDesign</li>
-              <li class="stack-item">Affinity Designer</li>
-              <li class="stack-item">Affinity Publisher</li>
-            </ul>
-          </article>
-
-          <article class="stack-card" data-reveal>
-            <div class="stack-card-head">
-              <div class="stack-icon-wrap" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-              </div>
-              <h3 class="stack-card-title">Digital &amp; UI Assets</h3>
-            </div>
-            <ul class="stack-items">
-              <li class="stack-item">Figma</li>
-              <li class="stack-item">Canva</li>
-              <li class="stack-item">Website &amp; Storefront Visuals</li>
-              <li class="stack-item">Pitch Decks &amp; Collateral</li>
-            </ul>
-          </article>
-
-          <article class="stack-card" data-reveal>
-            <div class="stack-card-head">
-              <div class="stack-icon-wrap" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 24 24">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>
-                </svg>
-              </div>
-              <h3 class="stack-card-title">Video &amp; AI Production</h3>
-            </div>
-            <ul class="stack-items">
-              <li class="stack-item">DaVinci Resolve</li>
-              <li class="stack-item">CapCut</li>
-              <li class="stack-item">Short-Form Campaign Reels</li>
-              <li class="stack-item">AI-Assisted Design Workflows</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="showcase" class="resume-section">
-      <div class="container section-grid">
-        <div class="section-rail">
-          <span class="section-kicker">03 / Showcase (Draft)</span>
-          <h2 class="section-heading">Featured Slots</h2>
-          <p class="section-note">Draft showcase slots — ready for portfolio thumbnails, Behance/Drive links, and before/after brand deliverables.</p>
-        </div>
-
-        <div class="draft-grid">
-          <article class="draft-card" data-reveal>
-            <span class="draft-badge">Draft Slot</span>
-            <div class="draft-thumb">[Placeholder: Upload 16:9 Social Ad &amp; Campaign Mockup]</div>
-            <h3 class="draft-title">Visual Slot 01 // Brand &amp; Social Campaigns</h3>
-            <p class="draft-desc">Showcase social banners, promotional flyers, and ad sets built for US &amp; Australian small businesses.</p>
-          </article>
-
-          <article class="draft-card" data-reveal>
-            <span class="draft-badge">Draft Slot</span>
-            <div class="draft-thumb">[Placeholder: Add Mindanao Timeline / Print Spread Preview]</div>
-            <h3 class="draft-title">Visual Slot 02 // Editorial &amp; Large-Format Print</h3>
-            <p class="draft-desc">Highlight print-ready tarpaulin digitization (Toym Imao / UNDP) and multi-page resource books.</p>
-          </article>
-
-          <article class="draft-card" data-reveal>
-            <span class="draft-badge">Draft Slot</span>
-            <div class="draft-thumb">[Placeholder: Link Storefront Banners &amp; DaVinci/CapCut Reel]</div>
-            <h3 class="draft-title">Visual Slot 03 // E-Commerce &amp; Video Reels</h3>
-            <p class="draft-desc">Feature product imagery, storefront graphics, and short-form video edits for retail brands.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="trust" class="resume-section">
-      <div class="container section-grid">
-        <div class="section-rail">
-          <span class="section-kicker">04 / Client Trust</span>
-          <h2 class="section-heading">Testimonials &amp; Clients</h2>
-          <p class="section-note">
-            Verified client feedback from LinkedIn &amp; Upwork, international organizations served, and academic credentials.
+          <span class="eyebrow">2026 VISUAL DESIGN PORTFOLIO // VOLT STUDIO EDITION</span>
+          <h1 class="hero-title">Brand Systems, Packaging &amp; High-Impact Print Collateral That Sell.</h1>
+          <p class="hero-lead">
+            Senior Graphic Designer &amp; Visual Strategist with <strong>10+ years of international production experience</strong> crafting retail packaging, corporate capability statements, book covers, paid social ad creatives, and manual non-AI photo retouching for US, Australian, and Philippine brands.
           </p>
+          <div class="hero-cta-row">
+            <a href="#portfolio" class="btn btn-primary">Inspect Canva Portfolio Plates ↓</a>
+            <a href="https://drive.google.com/drive/folders/1nMdlICKKTsNfNPp5L2QLeq-i57MiXYpe?usp=drive_link" target="_blank" rel="noopener" class="btn btn-secondary">Open Full Google Drive Vault ↗</a>
+            <a href="#contact" class="btn btn-secondary">Book Creative Consultation</a>
+          </div>
+          <div class="kpi-strip">
+            <div class="kpi-item">
+              <span class="kpi-num">10+ Yrs</span>
+              <span class="kpi-label">Commercial Graphic &amp; Print Production</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-num">16+ Brands</span>
+              <span class="kpi-label">US, Australian &amp; Global Clients</span>
+            </div>
+            <div class="kpi-item">
+              <span class="kpi-num">100%</span>
+              <span class="kpi-label">Print-Ready &amp; Digital Asset QA</span>
+            </div>
+          </div>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 20px;">
-          <div class="quote-grid">
-          <article class="quote-card" data-reveal>
-            <p class="quote-text">&ldquo;Noel Jed Ayala was a highly effective, excellent Logistics Lead in project partnerships of Bagong Lumad Artists Foundation Inc with the United Nations Development Program. Well-versed in IT, Noel also digitized the graphic design of Toym Imao for the Mindanao Timeline tarpaulin for classrooms and resource book for teachers (published in 2017 by CEAP, World Bank, Sacred Springs Dialogue Institute of Spirituality and Sustainability with Mindanews).&rdquo;</p>
-            <div class="quote-meta">
-              <div class="quote-author">Pauline Bautista</div>
-              <div class="quote-role">Values Educator-Home Economist, Philippines · Taken from LinkedIn</div>
+        <div class="portfolio-card">
+          <div class="card-media" data-lightbox-src="assets/brand-identity.jpg" data-lightbox-title="Branding & Visual Identity Systems (2026 Portfolio Plate)" data-lightbox-desc="Logo systems, packaging dielines, and brand identity collateral for Baking Divas, Age Defiance Anti-Aging Cream, Smile Please Services, and Smiling Paws Pets.">
+            <img src="assets/brand-identity.jpg" alt="Noel Ayala Branding and Visual Identity Portfolio Plate" />
+            <span class="zoom-pill">🔍 Click to Inspect Full Plate</span>
+          </div>
+          <div class="card-body">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px;">
+              <span class="mono-tag" style="margin-bottom:0;">FEATURED CANVA PLATE // 01</span>
+              <img src="assets/spyral-wordmark.png" alt="Spyral Media Wordmark" style="height:26px;width:auto;border-radius:4px;" />
+            </div>
+            <h2 class="card-title">Branding, Packaging &amp; Retail Identity Systems</h2>
+            <p class="card-text">Complete visual identity execution—from primary logomarks and typography systems to retail box packaging (Smiling Paws Pets, Age Defiance) and corporate stationery (Smile Please Services).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTERABLE CANVA PORTFOLIO PLATES -->
+    <section id="portfolio" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">REAL CANVA PORTFOLIO EXPORTS</span>
+          <h2 class="section-title">Selected Visual Design &amp; Production Plates</h2>
+          <p class="section-desc">Click any portfolio plate below to inspect the high-resolution Canva export in full-screen lightbox view.</p>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter portfolio plates by discipline">
+          <button type="button" class="filter-btn is-active" data-filter-btn="all">All Plates (6)</button>
+          <button type="button" class="filter-btn" data-filter-btn="branding">Branding &amp; Packaging</button>
+          <button type="button" class="filter-btn" data-filter-btn="print">Print &amp; Editorial</button>
+          <button type="button" class="filter-btn" data-filter-btn="ads">Social Ad Creatives</button>
+          <button type="button" class="filter-btn" data-filter-btn="retouch">Manual Photo Retouching</button>
+        </div>
+
+        <div class="card-grid-2">
+          <!-- Plate 1: Branding & Packaging -->
+          <article class="portfolio-card" data-filter-item="branding">
+            <div class="card-media" data-lightbox-src="assets/brand-identity.jpg" data-lightbox-title="Branding & Visual Identity — Packaging & Logo Systems" data-lightbox-desc="Includes Baking Divas brand mark, Age Defiance skincare packaging, Garth Lategan / Smile Please Services corporate identity, and Smiling Paws Pets retail box packaging.">
+              <img src="assets/brand-identity.jpg" alt="Branding and Packaging Portfolio Plate" loading="lazy" />
+              <span class="zoom-pill">🔍 Inspect High-Res Plate</span>
+            </div>
+            <div class="card-body">
+              <span class="mono-tag">BRANDING &amp; PACKAGING</span>
+              <h3 class="card-title">Consumer Product Packaging &amp; Brand Identity</h3>
+              <p class="card-text">
+                Full-spectrum identity design and retail packaging systems engineered for shelf impact and e-commerce conversion. Featured work includes <strong>Baking Divas</strong>, <strong>Age Defiance Anti-Aging Cream</strong>, <strong>Smile Please Services (Garth Lategan)</strong>, and <strong>Smiling Paws Pets</strong> cat litter mat packaging.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Logo Design</span>
+                <span class="tag">Retail Box Dielines</span>
+                <span class="tag">Cosmetic Packaging</span>
+                <span class="tag">Brand Guidelines</span>
+              </div>
             </div>
           </article>
 
-          <article class="quote-card" data-reveal>
-            <p class="quote-text">&ldquo;Noel is very competent and easy to work with. He always communicates and comes up with some great suggestions. I would recommend Noel to any other employer requiring a first class freelancer.&rdquo;</p>
-            <div class="quote-meta">
-              <div class="quote-author">Lynne Locke</div>
-              <div class="quote-role">CEO — Shoalhaven City Turf Club, Australia · Taken from Upwork</div>
+          <!-- Plate 2: Print Design & Marketing Collateral -->
+          <article class="portfolio-card" data-filter-item="print">
+            <div class="card-media" data-lightbox-src="assets/print-collateral.jpg" data-lightbox-title="Print Design & Marketing Collateral" data-lightbox-desc="Includes American Environmental Fabrication & Supply brochure, TEAM/GRIP industrial chemical labels, Quezon City editorial book covers, and KOLSEN corporate capability statement.">
+              <img src="assets/print-collateral.jpg" alt="Print Design and Marketing Collateral Plate" loading="lazy" />
+              <span class="zoom-pill">🔍 Inspect High-Res Plate</span>
+            </div>
+            <div class="card-body">
+              <span class="mono-tag">PRINT &amp; CORPORATE COLLATERAL</span>
+              <h3 class="card-title">Capability Statements, Book Covers &amp; Industrial Labels</h3>
+              <p class="card-text">
+                Print-ready CMYK layouts and multi-page corporate documents: <strong>KOLSEN</strong> corporate capability statement (Australia), <strong>American Environmental Fabrication &amp; Supply</strong> tri-fold brochure, <strong>Quezon City</strong> publication cover design, and <strong>TEAM / GRIP</strong> industrial product labels.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Corporate Brochures</span>
+                <span class="tag">Capability Statements</span>
+                <span class="tag">Book Cover Design</span>
+                <span class="tag">Industrial Labels</span>
+              </div>
             </div>
           </article>
+
+          <!-- Plate 3: Social Media Designs & Ad Creatives -->
+          <article class="portfolio-card" data-filter-item="ads">
+            <div class="card-media" data-lightbox-src="assets/social-ads-showcase.jpg" data-lightbox-title="Social Media Designs // Paid Ad Creatives" data-lightbox-desc="Paid advertising creatives and split-testing graphics for Spyral Media, Archer Racecourse Nowra Easter Family Race Day, e-commerce flash sales, food promotions, and fitness campaigns.">
+              <img src="assets/social-ads-showcase.jpg" alt="Social Media Designs and Paid Ad Creatives Plate" loading="lazy" />
+              <span class="zoom-pill">🔍 Inspect High-Res Plate</span>
+            </div>
+            <div class="card-body">
+              <span class="mono-tag">PAID AD CREATIVES &amp; CAMPAIGNS</span>
+              <h3 class="card-title">High-Converting Social Ads &amp; Event Posters</h3>
+              <p class="card-text">
+                Scroll-stopping direct-response creatives built for split-testing and ROAS: <strong>Spyral Media</strong> ad campaigns, <strong>Archer Racecourse Nowra</strong> Easter Family Race Day event poster, 1B Flash Sale promos, restaurant campaigns, and fitness creatives.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Meta &amp; IG Ad Creatives</span>
+                <span class="tag">A/B Split Testing</span>
+                <span class="tag">Event Posters</span>
+                <span class="tag">Spyral Media</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Plate 4: Manual Photo Editing & Retouching -->
+          <article class="portfolio-card" data-filter-item="retouch">
+            <div class="card-media" data-lightbox-src="assets/photo-retouching.jpg" data-lightbox-title="Manual Photo Editing & Non-AI Retouching" data-lightbox-desc="Traditional Photoshop retouching without generative AI distortion: e-commerce ghost mannequin apparel extraction, natural skin frequency separation, and archival photo restoration.">
+              <img src="assets/photo-retouching.jpg" alt="Manual Photo Editing and Retouching Before and After Plate" loading="lazy" />
+              <span class="zoom-pill">🔍 Inspect High-Res Plate</span>
+            </div>
+            <div class="card-body">
+              <span class="mono-tag">NON-AI PHOTOSHOP CRAFTSMANSHIP</span>
+              <h3 class="card-title">Manual Photo Retouching, Ghost Mannequin &amp; Restoration</h3>
+              <p class="card-text">
+                Precision manual editing using traditional Photoshop workflows—preserving authentic product textures for e-commerce apparel (<strong>Oliver Logan / Retrospec / DD Apparel</strong>), natural portrait retouching, and historical photograph restoration.
+              </p>
+              <div class="tag-list">
+                <span class="tag">E-Commerce Apparel Cleanup</span>
+                <span class="tag">Frequency Separation</span>
+                <span class="tag">Color Grading</span>
+                <span class="tag">Photo Restoration</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Plate 5: About & Creative Philosophy -->
+          <article class="portfolio-card" data-filter-item="branding">
+            <div class="card-media" data-lightbox-src="assets/about-profile.jpg" data-lightbox-title="About Noel Ayala — Creative Philosophy" data-lightbox-desc="Over a decade of experience working with clients across industries and continents—combining creativity, problem-solving, and commercial clarity.">
+              <img src="assets/about-profile.jpg" alt="About Noel Ayala Visual Designer Plate" loading="lazy" />
+              <span class="zoom-pill">🔍 Inspect High-Res Plate</span>
+            </div>
+            <div class="card-body">
+              <span class="mono-tag">DESIGNER PROFILE // 10+ YEARS</span>
+              <h3 class="card-title">Commercial Clarity Meets Disciplined Consistency</h3>
+              <p class="card-text">
+                “I believe great design should communicate clearly, create impact, and leave a lasting impression. Outside of design, cycling reminds me that progress comes from consistency, one pedal stroke at a time.”
+              </p>
+              <div class="tag-list">
+                <span class="tag">Creative Direction</span>
+                <span class="tag">Brand Strategy</span>
+                <span class="tag">Cross-Cultural Communication</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Plate 6: Portfolio Cover & Agency Identity -->
+          <article class="portfolio-card" data-filter-item="branding print">
+            <div class="card-media" data-lightbox-src="assets/portfolio-cover.jpg" data-lightbox-title="Noel Ayala 2026 Visual Design Portfolio Cover" data-lightbox-desc="2026 Visual Design Portfolio system created in Canva Pro and Adobe Creative Cloud.">
+              <img src="assets/portfolio-cover.jpg" alt="Noel Ayala 2026 Visual Design Portfolio Cover" loading="lazy" />
+              <span class="zoom-pill">🔍 Inspect High-Res Plate</span>
+            </div>
+            <div class="card-body">
+              <span class="mono-tag">PORTFOLIO SYSTEM &amp; VAULT</span>
+              <h3 class="card-title">Complete Visual Design Archive (Google Drive + Canva)</h3>
+              <p class="card-text">
+                Need to review additional raw files, multi-page PDFs, or video ad creatives? Access the full cloud archive directly below.
+              </p>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;">
+                <a href="https://drive.google.com/drive/folders/1nMdlICKKTsNfNPp5L2QLeq-i57MiXYpe?usp=drive_link" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Design Archive Drive ↗</a>
+                <a href="https://drive.google.com/drive/folders/1XqFobdKU6NT3aukGaZiRbadjbE105V0R?usp=drive_link" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Video Ad Creatives Drive ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVE STACK & RESUME TIMELINE -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">CURRICULUM VITAE // VISUAL DESIGN</span>
+          <h2 class="section-title">Creative Production Experience &amp; Tool Mastery</h2>
+          <p class="section-desc">A decade of delivering brand consistency across print, packaging, e-commerce catalogs, and paid digital campaigns.</p>
+        </div>
+
+        <div class="card-grid-3" style="margin-bottom:40px;">
+          <div class="feature-card">
+            <div class="card-body">
+              <span class="mono-tag">01 // DESIGN SOFTWARE</span>
+              <h3 class="card-title">Adobe CC &amp; Canva Pro</h3>
+              <p class="card-text">Expert command of Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Canva Pro Brand Kits &amp; Bulk Create, and Figma UI/brand systems.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="card-body">
+              <span class="mono-tag">02 // PRINT &amp; PACKAGING</span>
+              <h3 class="card-title">Pre-Press &amp; Dieline QA</h3>
+              <p class="card-text">CMYK color separation, bleed/trim setup, industrial product labeling, retail box packaging, capability statements, and editorial book layouts.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="card-body">
+              <span class="mono-tag">03 // DIGITAL &amp; E-COMMERCE</span>
+              <h3 class="card-title">Conversion Visuals</h3>
+              <p class="card-text">E-commerce product retouching, Amazon/Shopify hero imagery, Meta/TikTok/YouTube ad thumbnails, and multi-channel campaign toolkits.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-top">
+              <h3 class="timeline-role">Senior Freelance Graphic Designer &amp; Visual Strategist</h3>
+              <span class="timeline-period">2015 — PRESENT · GLOBAL REMOTE (US / AU / PH)</span>
+            </div>
+            <p style="color:var(--text-muted);font-size:0.95rem;">Direct creative partner for commercial brands, agencies, and e-commerce operators including <strong>Spyral Media</strong>, <strong>Kolsen (AU)</strong>, <strong>Oliver Logan (US)</strong>, <strong>Retrospec (US)</strong>, <strong>DD Apparel / DoubleDyed (US)</strong>, <strong>American Environmental Fabrication &amp; Supply</strong>, and <strong>Shoalhaven Zoo (AU)</strong>.</p>
+            <ul class="bullet-list">
+              <li>Designed retail packaging, logos, and corporate identity systems for consumer brands (Baking Divas, Age Defiance, Smiling Paws Pets, Smile Please Services).</li>
+              <li>Produced print-ready corporate capability statements, brochures, book covers, and industrial product labels with zero pre-press rejection.</li>
+              <li>Executed non-AI manual photo retouching, apparel ghost-mannequin cleanup, and color correction across hundreds of e-commerce SKUs.</li>
+              <li>Built modular Canva Pro and Adobe templates enabling marketing teams to launch split-tested social ad creatives rapidly.</li>
+            </ul>
           </div>
 
-          <div class="roster-grid">
-          <article class="roster-card" data-reveal>
-            <h3 class="roster-title">Government &amp; Non-Profit</h3>
-            <ul class="roster-list">
-              <li>National Commission for Culture and the Arts (PH)</li>
-              <li>Asian Development Fund (PH)</li>
-              <li>Bagong Lumad Artists Foundation Inc. (PH / UNDP)</li>
-              <li>Erehwon Center for the Arts (PH)</li>
-              <li>Daloy ng Buhay, Inc. (PH)</li>
+          <div class="timeline-item">
+            <div class="timeline-top">
+              <h3 class="timeline-role">Visual &amp; Digital Operations Specialist — Corporate &amp; Public Sector</h3>
+              <span class="timeline-period">MULTI-PROJECT · INTERNATIONAL &amp; PH</span>
+            </div>
+            <ul class="bullet-list">
+              <li>Contributed visual documentation, publication layouts, and digital campaign assets for organizations including the <strong>Local Government of Quezon City</strong> and international non-profit initiatives.</li>
+              <li>Combined graphic design precision with structured project management across Google Workspace, Shopify, WordPress, and Canva.</li>
             </ul>
-          </article>
-
-          <article class="roster-card" data-reveal>
-            <h3 class="roster-title">Corporate &amp; Business Clients</h3>
-            <ul class="roster-list">
-              <li>Williamson-Dickie Mfg. Co. (Dickies, USA)</li>
-              <li>Anheuser-Busch (Budweiser, USA)</li>
-              <li>Carpathian Capital Management (USA)</li>
-              <li>DD Apparel LLC (USA)</li>
-              <li>3G&#x27;s Vino LLC (USA)</li>
-            </ul>
-          </article>
-
-          <article class="roster-card" data-reveal>
-            <h3 class="roster-title">Small Business &amp; Service Providers</h3>
-            <ul class="roster-list">
-              <li>Smile Please Services (Australia)</li>
-              <li>Shoalhaven City Turf Club (Australia)</li>
-              <li>Gypsy Jet Setter Yoga (USA)</li>
-              <li>The Bored Boho (USA)</li>
-              <li>Oliver Logan &amp; Retrospec (USA)</li>
-            </ul>
-          </article>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="credentials-grid">
-            <article class="credential-card" data-reveal>
-              <div class="credential-top">
-                <div class="credential-icon" aria-hidden="true">
-                  <svg class="icon" viewBox="0 0 24 24">
-                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                  </svg>
+    <!-- VERIFIED CLIENT TESTIMONIALS -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">VERIFIED CLIENT ENDORSEMENTS</span>
+          <h2 class="section-title">Trusted by Founders, CEOs &amp; Educators Across the US &amp; Australia</h2>
+          <p class="section-desc">Real feedback from long-term international clients across Upwork and direct agency retainers.</p>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="quote">
+              “Noel has a very thorough and involved process for any job that he does which makes him the most reliable contractor I have worked with. He is highly responsive, creative, and diligent. I would recommend him to anyone and I will be working with him again. Thank you Noel!”
+            </blockquote>
+            <div class="author-meta">
+              <strong>O. Timsit</strong>
+              <span>CEO — DoubleDyed (United States · Upwork Verified)</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="quote">
+              “Working with Noel was seamless from start to finish. He immediately understood our brand direction, delivered polished visual assets ahead of schedule, and brought proactive ideas that elevated our entire campaign presentation.”
+            </blockquote>
+            <div class="author-meta">
+              <strong>Pauline Bautista</strong>
+              <span>Brand &amp; Marketing Collaborator</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="quote">
+              “Reliable, detail-oriented, and extraordinarily versatile. Noel handles complex digital deliverables, instructional layouts, and day-to-day operational updates with zero friction and consistent excellence.”
+            </blockquote>
+            <div class="author-meta">
+              <strong>Lynne Locke</strong>
+              <span>Educator &amp; Program Partner</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="canva-proof-banner">
+          <div class="canva-proof-text">
+            <span class="mono-tag">CANVA PORTFOLIO PLATE // VERIFIED REVIEWS</span>
+            <h3>Inspect Original Portfolio Testimonial Sheet</h3>
+            <p>Exported directly from Noel Ayala’s 2026 Canva Visual &amp; Operations Portfolio.</p>
+          </div>
+          <button type="button" class="btn btn-secondary" data-lightbox-src="assets/client-testimonials.jpg" data-lightbox-title="Verified Client Testimonials — 2026 Portfolio Plate" data-lightbox-desc="Original Canva portfolio plate featuring 5-star reviews from Pauline Bautista, Lynne Locke, and O. Timsit (CEO of DoubleDyed, USA).">
+            View Full Testimonial Plate ↗
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING & DIRECT CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">DIRECT HIRE &amp; CONSULTATION</span>
+          <h2 class="section-title">Ready to Elevate Your Brand Identity, Packaging, or Ad Creatives?</h2>
+          <p class="section-desc">Send your creative brief below or book a live discovery call on Noel’s calendar.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3 class="card-heading">Send a Direct Brief</h3>
+            <p class="card-sub">Routed directly to <strong>noeljedayala@gmail.com</strong>. Typical response time: under 4 hours (US/AU/PH overlap).</p>
+            <form id="contact-form" action="https://formsubmit.co/ajax/noeljedayala@gmail.com" method="POST" class="contact-form">
+              <input type="hidden" name="_subject" value="Graphic Design Portfolio (graphic.noeljedayala.workers.dev) — New Inquiry via Portfolio" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name *</label>
+                  <input type="text" id="name" name="name" required placeholder="Jane Doe" />
                 </div>
-                <span class="role-date">2006 – 2012</span>
-              </div>
-              <div>
-                <h3 class="credential-title">B.S. in Information Technology</h3>
-                <p class="credential-org">Informatics International College</p>
-              </div>
-            </article>
-
-            <article class="credential-card" data-reveal>
-              <div class="credential-top">
-                <div class="credential-icon" aria-hidden="true">
-                  <svg class="icon" viewBox="0 0 24 24">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    <path d="m9 12 2 2 4-4"></path>
-                  </svg>
+                <div class="form-group">
+                  <label for="email">Work Email *</label>
+                  <input type="email" id="email" name="email" required placeholder="jane@company.com" />
                 </div>
-                <span class="role-date">English &bull; Tagalog &bull; Bisaya</span>
               </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="organization">Company / Brand</label>
+                  <input type="text" id="organization" name="organization" placeholder="Acme Corp" />
+                </div>
+                <div class="form-group">
+                  <label for="engagement">Engagement Type</label>
+                  <select id="engagement" name="engagement">
+                    <option value="Full-Time / Dedicated Role">Full-Time / Dedicated Role</option>
+                    <option value="Monthly Retainer">Monthly Retainer</option>
+                    <option value="Fixed-Scope Project">Fixed-Scope Project</option>
+                    <option value="Consultation / Audit">Consultation / Audit</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Scope or Role Details *</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Share your goals, timeline, and what you are looking to achieve..."></textarea>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-full">Send Direct Inquiry</button>
+              <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+
+            <div class="direct-channels">
+              <a href="mailto:noeljedayala@gmail.com" class="channel-pill">✉ noeljedayala@gmail.com</a>
+              <a href="tel:+639278652574" class="channel-pill">☎ +63 927 865 2574</a>
+              <a href="https://www.upwork.com/freelancers/~01413f629ec474e90c" target="_blank" rel="noopener" class="channel-pill">Upwork Profile ↗</a>
+              <a href="https://www.linkedin.com/in/noelayala/" target="_blank" rel="noopener" class="channel-pill">LinkedIn ↗</a>
+              <a href="https://github.com/shakti2-cmd" target="_blank" rel="noopener" class="channel-pill">GitHub ↗</a>
+            </div>
+          </div>
+
+          <div class="calendar-card">
+            <div class="calendar-card-header">
               <div>
-                <h3 class="credential-title">Licensed Real Estate Broker (PRC-REB #0011812)</h3>
-                <p class="credential-org">Fluent in English &amp; Tagalog; Native Bisaya</p>
+                <span class="mono-tag">LIVE GOOGLE CALENDAR</span>
+                <h3 class="card-heading">Book a 1-on-1 Discovery Call</h3>
               </div>
-            </article>
+              <a href="https://calendar.app.google/Q2oPX485GmtjhGrF7" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Open in New Tab ↗</a>
+            </div>
+            <div class="calendar-embed-wrap">
+              <iframe
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2XO7GI3LntbHEulO68_33mlqqtU74pimPQ8VeTuUrTK0xz6ShaPnKzOOGsl75nATmoC44oPDFs?gv=true"
+                title="Schedule an appointment with Noel Ayala"
+                loading="lazy"
+                frameborder="0"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="booking" class="resume-section" aria-label="Schedule a call">
-      <div class="container section-grid">
-        <div class="section-rail">
-          <span class="section-kicker">05 / Availability</span>
-          <h2 class="section-heading">Book a Time</h2>
-          <p class="section-note">
-            View live availability and book a slot directly, or reach out by email or phone (+63 927 865 2574).
-          </p>
-          <p class="print-booking-fallback">
-            Email: noeljedayala@gmail.com &bull; Phone: +63 927 865 2574 &bull; Booking: https://calendar.app.google/Q2oPX485GmtjhGrF7
-          </p>
-          <div class="booking-actions">
-            <a
-              class="btn btn-secondary"
-              href="https://calendar.app.google/Q2oPX485GmtjhGrF7"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              <span>Open in New Tab</span>
-            </a>
-            <a class="btn btn-secondary" href="mailto:noeljedayala@gmail.com">
-              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-              </svg>
-              <span>noeljedayala@gmail.com</span>
-            </a>
+    <!-- LIGHTBOX MODAL -->
+    <div id="portfolio-lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <div class="lightbox-content">
+        <div class="lightbox-bar">
+          <div>
+            <h3 id="lightbox-title" class="lightbox-title">Portfolio Preview</h3>
+            <p id="lightbox-desc" class="lightbox-desc"></p>
           </div>
+          <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close preview">✕ Close</button>
         </div>
-
-        <div class="calendar-embed-card" data-reveal>
-          <div class="calendar-embed-head">
-            <span class="manifest-title">Google Calendar // Appointment Schedule</span>
-            <span class="manifest-badge">Live Slots</span>
-          </div>
-          <div class="calendar-frame-wrap">
-            <iframe
-              class="calendar-iframe"
-              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2XO7GI3LntbHEulO68_33mlqqtU74pimPQ8VeTuUrTK0xz6ShaPnKzOOGsl75nATmoC44oPDFs?gv=true"
-              title="Noel Ayala Google Calendar Appointment Schedule"
-              width="100%"
-              height="640"
-              style="border: 0; background-color: #FFFFFF;"
-              loading="lazy"
-            ></iframe>
-          </div>
+        <div class="lightbox-img-wrap">
+          <img id="lightbox-img" src="" alt="Portfolio full preview" />
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="contact" class="resume-section contact-section" aria-label="Contact form">
-      <div class="container section-grid">
-        <div class="section-rail">
-          <span class="section-kicker">06 / Contact</span>
-          <h2 class="section-heading">Send a Message</h2>
-          <p class="section-note">
-            Prefer async? Send a message directly to my inbox at noeljedayala@gmail.com.
-          </p>
-        </div>
-
-        <div class="contact-form-card" data-reveal>
-          <form
-            id="contact-form"
-            class="contact-form"
-            action="https://formsubmit.co/noeljedayala@gmail.com"
-            method="POST"
-          >
-            <input type="text" name="_honey" style="display: none;" tabindex="-1" autocomplete="off" />
-            <input type="hidden" name="_subject" value="New message from Noel Ayala — Graphic Design Site" />
-            <input type="hidden" name="_template" value="table" />
-
-            <div class="form-row-2">
-              <div class="form-field">
-                <label class="form-label" for="contact-name">Name</label>
-                <input
-                  id="contact-name"
-                  class="form-input"
-                  type="text"
-                  name="name"
-                  placeholder="Your name"
-                  autocomplete="name"
-                  required
-                />
-              </div>
-
-              <div class="form-field">
-                <label class="form-label" for="contact-email">Email</label>
-                <input
-                  id="contact-email"
-                  class="form-input"
-                  type="email"
-                  name="email"
-                  placeholder="you@example.com"
-                  autocomplete="email"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="form-field">
-              <label class="form-label" for="contact-subject">Subject</label>
-              <input
-                id="contact-subject"
-                class="form-input"
-                type="text"
-                name="subject"
-                placeholder="Graphic design project, brand kit, or campaign inquiry"
-              />
-            </div>
-
-            <div class="form-field">
-              <label class="form-label" for="contact-message">Message</label>
-              <textarea
-                id="contact-message"
-                class="form-textarea"
-                name="message"
-                placeholder="Share a brief overview, timeline, or question..."
-                required
-              ></textarea>
-            </div>
-
-            <div id="contact-form-status" class="form-status" role="status" aria-live="polite" hidden></div>
-
-            <div class="form-actions">
-              <button id="contact-submit-btn" class="btn btn-primary" type="submit">
-                Send Message
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>&copy; 2026 Noel Ayala &bull; Tagum City, Philippines &bull; Graphic Design</span>
-      <div class="footer-right">
-        <a class="back-to-top" href="#summary" aria-label="Back to top">
-          <span>Top</span>
-          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="m18 15-6-6-6 6"></path>
-          </svg>
-        </a>
+      <div>
+        <strong>Noel Jedidiah Ayala</strong> · Visual Design & Brand Studio · Tagum City, Davao Region, Philippines (UTC+8 · US/AU/EU Overlap)
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <a href="https://resume.noeljedayala.workers.dev/">Master Resume</a>
+        <a href="https://www.upwork.com/freelancers/~01413f629ec474e90c" target="_blank" rel="noopener">Upwork</a>
+        <a href="https://www.linkedin.com/in/noelayala/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/shakti2-cmd" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:noeljedayala@gmail.com">noeljedayala@gmail.com</a>
       </div>
     </div>
   </footer>
 
-  <div id="copy-status-live" class="sr-only" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
 </body>
 </html>
