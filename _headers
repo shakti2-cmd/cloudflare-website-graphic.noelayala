@@ -1,0 +1,17 @@
+# Cloudflare Pages Static Security & Caching Headers
+# Free Tier compatible - zero server or worker overhead
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/*.css
+  Cache-Control: public, max-age=300, must-revalidate
+
+/*.js
+  Cache-Control: public, max-age=300, must-revalidate
+
+/*.svg
+  Cache-Control: public, max-age=86400

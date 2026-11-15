@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noel Ayala — Digital Graphic Designer &amp; Visual Production</title>
+  <meta name="description" content="Portfolio &amp; profile of Noel Ayala — Digital Graphic Designer with 10+ years creating social campaigns, brand assets, print layouts, and short-form video for global clients." />
+  <meta property="og:title" content="Noel Ayala — Digital Graphic Designer &amp; Visual Production" />
+  <meta property="og:description" content="Portfolio &amp; profile of Noel Ayala — Digital Graphic Designer with 10+ years creating social campaigns, brand assets, print layouts, and short-form video for global clients." />
+  <meta property="og:type" content="profile" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("noel_resume_theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles.css?v=1" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Noel Ayala",
+      "jobTitle": "Graphic Design",
+      "email": "mailto:noeljedayala@gmail.com",
+      "telephone": "+63 927 865 2574",
+      "url": "https://graphic.noeljedayala.workers.dev",
+      "sameAs": ["https://github.com/shakti2-cmd"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tagum City",
+        "addressRegion": "Davao Region",
+        "addressCountry": "PH"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Informatics International College"
+      }
+    }
+  </script>
+  <script src="./app.js?v=1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand-link" href="#summary" aria-label="Noel Ayala home">
+        <span class="brand-mark" aria-hidden="true">NA</span>
+        <span class="brand-text">
+          <span class="brand-name">Noel Ayala</span>
+          <span class="brand-role">Graphic Design</span>
+        </span>
+      </a>
+
+      <nav aria-label="Primary sections">
+        <ul class="nav-links">
+          <li><a class="nav-link is-active" href="#summary">Summary</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#stack">Capabilities</a></li>
+          <li><a class="nav-link" href="#showcase">Drafts</a></li>
+          <li><a class="nav-link" href="#trust">Trust</a></li>
+          <li><a class="nav-link" href="#booking">Book</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button
+          id="theme-toggle"
+          class="btn btn-icon"
+          type="button"
+          aria-pressed="false"
+          aria-label="Switch to Minimal light theme"
+          title="Switch theme"
+        >
+          <svg id="icon-sun" class="icon icon-circle" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg id="icon-moon" class="icon" viewBox="0 0 24 24" aria-hidden="true" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path>
+          </svg>
+        </button>
+
+        <button class="btn btn-ghost btn-print" type="button" data-print-resume>
+          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9V2h12v7"></path>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print CV</span>
+        </button>
+
+        <a class="btn btn-primary" href="mailto:noeljedayala@gmail.com">
+          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+          <span>Email</span>
+        </a>
+
+        <button
+          id="mobile-menu-btn"
+          class="btn btn-icon mobile-menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Toggle navigation menu"
+        >
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-drawer" class="mobile-drawer" hidden>
+      <ul class="mobile-drawer-list">
+        <li><a class="mobile-drawer-link is-active" href="#summary">Summary</a></li>
+        <li><a class="mobile-drawer-link" href="#experience">Experience</a></li>
+        <li><a class="mobile-drawer-link" href="#stack">Capabilities</a></li>
+        <li><a class="mobile-drawer-link" href="#showcase">Draft Portfolio</a></li>
+        <li><a class="mobile-drawer-link" href="#trust">Client Trust &amp; Credentials</a></li>
+        <li><a class="mobile-drawer-link" href="#booking">Book a Call</a></li>
+        <li><a class="mobile-drawer-link" href="#contact">Contact Form</a></li>
+        <li>
+          <button class="btn btn-secondary" type="button" data-print-resume style="width: 100%; margin-top: 6px;">
+            Print / Save Resume PDF
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="summary" class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <div class="draft-banner">
+            <span>DRAFT v0.1 &bull; Specialty Portfolio — Placeholders ready for final media</span>
+          </div>
+
+          <div class="eyebrow-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Digital Graphic Designer · 10+ Years Experience</span>
+          </div>
+
+          <h1 class="hero-title">Noel Ayala</h1>
+          <p class="hero-subtitle">Marketing graphics, print &amp; editorial layouts, e-commerce visuals, and short-form video editing.</p>
+          <p class="hero-summary">Creative and detail-oriented Graphic Designer with over 10 years of experience producing digital content, marketing collateral, social media graphics, website assets, and visual branding for international clients across the USA, UK, Australia, and the Philippines.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                <path d="M16 2v4M8 2v4M3 10h18"></path>
+              </svg>
+              <span>Book a Call</span>
+            </a>
+
+            <a class="btn btn-secondary" href="mailto:noeljedayala@gmail.com">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span>Email Noel</span>
+            </a>
+
+            <button class="btn btn-secondary" type="button" data-copy-email>
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span data-copy-label>Copy Email</span>
+            </button>
+
+            <a
+              class="btn btn-ghost"
+              href="https://resume.noeljedayala.workers.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>Master CV</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="meta-item">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle class="icon-circle" cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Tagum City, Davao Region, PH</span>
+            </span>
+            <span class="meta-item">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a class="meta-link" href="tel:+639278652574">+63 927 865 2574</a>
+            </span>
+            <span class="meta-item">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <a class="meta-link" href="mailto:noeljedayala@gmail.com">noeljedayala@gmail.com</a>
+            </span>
+          </div>
+        </div>
+
+        <aside class="manifest-card" aria-label="Specialty profile snapshot">
+          <div class="manifest-header">
+            <span class="manifest-title">Specialty Snapshot</span>
+            <span class="manifest-badge">Design · 2012–Present</span>
+          </div>
+          <div class="manifest-list">
+            <div class="manifest-row">
+              <span class="manifest-key">Specialty</span>
+              <span class="manifest-val">
+                Brand, Social &amp; Print Production
+                <span class="manifest-sub">Photoshop, InDesign, Canva, Affinity Suite &amp; Figma</span>
+              </span>
+            </div>
+            <div class="manifest-row">
+              <span class="manifest-key">Video / Motion</span>
+              <span class="manifest-val">
+                CapCut &amp; DaVinci Resolve
+                <span class="manifest-sub">Short-form reels, promos &amp; campaign cuts</span>
+              </span>
+            </div>
+            <div class="manifest-row">
+              <span class="manifest-key">AI Workflow</span>
+              <span class="manifest-val">
+                AI-Assisted Design Pipelines
+                <span class="manifest-sub">Rapid ideation, asset prep &amp; batch variants</span>
+              </span>
+            </div>
+            <div class="manifest-row">
+              <span class="manifest-key">Featured Work</span>
+              <span class="manifest-val">
+                UNDP Mindanao Timeline
+                <span class="manifest-sub">Digitized Toym Imao artwork for classrooms &amp; print</span>
+              </span>
+            </div>
+            <div class="manifest-row">
+              <span class="manifest-key">Global Reach</span>
+              <span class="manifest-val">
+                USA · UK · Australia · PH
+                <span class="manifest-sub">10+ years remote freelance visual delivery</span>
+              </span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="experience" class="resume-section">
+      <div class="container section-grid">
+        <div class="section-rail">
+          <span class="section-kicker">01 / Experience</span>
+          <h2 class="section-heading">Relevant History</h2>
+          <p class="section-note">Over a decade delivering campaign graphics, storefront visuals, editorial print layouts, and short-form video for brands and institutions.</p>
+        </div>
+
+        <div class="timeline-list">
+          <article class="experience-card is-current" data-reveal>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="role-header">
+              <h3 class="role-title">Freelance Digital Graphic Designer</h3>
+              <span class="role-date">2012 – Present</span>
+            </div>
+            <div class="role-org">Self-Employed · International Remote Clients (USA, UK, Australia, PH)</div>
+            <ul class="role-bullets">
+              <li>Designed social media graphics, digital advertisements, pitch decks, and promotional materials for international clients.</li>
+              <li>Produced visual assets for websites, e-commerce storefronts (Retrospec, Oliver Logan, DD Apparel LLC), and multi-channel launches.</li>
+              <li>Edited short-form videos and motion creatives using CapCut and DaVinci Resolve for brand marketing campaigns.</li>
+              <li>Digitized Toym Imao&#x27;s graphic artwork for the Mindanao Timeline classroom tarpaulin and teacher resource book (published 2017 by CEAP, World Bank, Sacred Springs Dialogue Institute &amp; Mindanews).</li>
+            </ul>
+            <div class="role-tags" aria-label="Skills and engagements">
+              <span class="chip">Adobe Photoshop</span>
+              <span class="chip">Adobe InDesign</span>
+              <span class="chip">Affinity Suite</span>
+              <span class="chip">Canva</span>
+              <span class="chip">CapCut</span>
+              <span class="chip">DaVinci Resolve</span>
+            </div>
+          </article>
+
+          <article class="experience-card" data-reveal>
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="role-header">
+              <h3 class="role-title">Digital Production &amp; Brand Support Specialist</h3>
+              <span class="role-date">2012 – 2024</span>
+            </div>
+            <div class="role-org">Cultural Foundations, Turf Clubs &amp; Retail Brands</div>
+            <ul class="role-bullets">
+              <li>Created marketing collateral, event graphics, and publication layouts for Shoalhaven City Turf Club (Australia), Erehwon Center for the Arts, Daloy ng Buhay, Inc., and NCCA.</li>
+              <li>Supported corporate and consumer visual campaigns for brands including Williamson-Dickie (Dickies), Anheuser-Busch (Budweiser), and 3G&#x27;s Vino LLC.</li>
+            </ul>
+            <div class="role-tags" aria-label="Skills and engagements">
+              <span class="chip">Shoalhaven City Turf Club</span>
+              <span class="chip">Erehwon Center for the Arts</span>
+              <span class="chip">Dickies USA</span>
+              <span class="chip">Budweiser USA</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="resume-section">
+      <div class="container section-grid">
+        <div class="section-rail">
+          <span class="section-kicker">02 / Capabilities</span>
+          <h2 class="section-heading">Tools &amp; Stack</h2>
+          <p class="section-note">Industry-standard raster, vector, page-layout, and video editing software paired with AI-assisted production workflows.</p>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card" data-reveal>
+            <div class="stack-card-head">
+              <div class="stack-icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="stack-card-title">Design &amp; Layout</h3>
+            </div>
+            <ul class="stack-items">
+              <li class="stack-item">Adobe Photoshop</li>
+              <li class="stack-item">Adobe InDesign</li>
+              <li class="stack-item">Affinity Designer</li>
+              <li class="stack-item">Affinity Publisher</li>
+            </ul>
+          </article>
+
+          <article class="stack-card" data-reveal>
+            <div class="stack-card-head">
+              <div class="stack-icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="stack-card-title">Digital &amp; UI Assets</h3>
+            </div>
+            <ul class="stack-items">
+              <li class="stack-item">Figma</li>
+              <li class="stack-item">Canva</li>
+              <li class="stack-item">Website &amp; Storefront Visuals</li>
+              <li class="stack-item">Pitch Decks &amp; Collateral</li>
+            </ul>
+          </article>
+
+          <article class="stack-card" data-reveal>
+            <div class="stack-card-head">
+              <div class="stack-icon-wrap" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="stack-card-title">Video &amp; AI Production</h3>
+            </div>
+            <ul class="stack-items">
+              <li class="stack-item">DaVinci Resolve</li>
+              <li class="stack-item">CapCut</li>
+              <li class="stack-item">Short-Form Campaign Reels</li>
+              <li class="stack-item">AI-Assisted Design Workflows</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="showcase" class="resume-section">
+      <div class="container section-grid">
+        <div class="section-rail">
+          <span class="section-kicker">03 / Showcase (Draft)</span>
+          <h2 class="section-heading">Featured Slots</h2>
+          <p class="section-note">Draft showcase slots — ready for portfolio thumbnails, Behance/Drive links, and before/after brand deliverables.</p>
+        </div>
+
+        <div class="draft-grid">
+          <article class="draft-card" data-reveal>
+            <span class="draft-badge">Draft Slot</span>
+            <div class="draft-thumb">[Placeholder: Upload 16:9 Social Ad &amp; Campaign Mockup]</div>
+            <h3 class="draft-title">Visual Slot 01 // Brand &amp; Social Campaigns</h3>
+            <p class="draft-desc">Showcase social banners, promotional flyers, and ad sets built for US &amp; Australian small businesses.</p>
+          </article>
+
+          <article class="draft-card" data-reveal>
+            <span class="draft-badge">Draft Slot</span>
+            <div class="draft-thumb">[Placeholder: Add Mindanao Timeline / Print Spread Preview]</div>
+            <h3 class="draft-title">Visual Slot 02 // Editorial &amp; Large-Format Print</h3>
+            <p class="draft-desc">Highlight print-ready tarpaulin digitization (Toym Imao / UNDP) and multi-page resource books.</p>
+          </article>
+
+          <article class="draft-card" data-reveal>
+            <span class="draft-badge">Draft Slot</span>
+            <div class="draft-thumb">[Placeholder: Link Storefront Banners &amp; DaVinci/CapCut Reel]</div>
+            <h3 class="draft-title">Visual Slot 03 // E-Commerce &amp; Video Reels</h3>
+            <p class="draft-desc">Feature product imagery, storefront graphics, and short-form video edits for retail brands.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust" class="resume-section">
+      <div class="container section-grid">
+        <div class="section-rail">
+          <span class="section-kicker">04 / Client Trust</span>
+          <h2 class="section-heading">Testimonials &amp; Clients</h2>
+          <p class="section-note">
+            Verified client feedback from LinkedIn &amp; Upwork, international organizations served, and academic credentials.
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="quote-grid">
+          <article class="quote-card" data-reveal>
+            <p class="quote-text">&ldquo;Noel Jed Ayala was a highly effective, excellent Logistics Lead in project partnerships of Bagong Lumad Artists Foundation Inc with the United Nations Development Program. Well-versed in IT, Noel also digitized the graphic design of Toym Imao for the Mindanao Timeline tarpaulin for classrooms and resource book for teachers (published in 2017 by CEAP, World Bank, Sacred Springs Dialogue Institute of Spirituality and Sustainability with Mindanews).&rdquo;</p>
+            <div class="quote-meta">
+              <div class="quote-author">Pauline Bautista</div>
+              <div class="quote-role">Values Educator-Home Economist, Philippines · Taken from LinkedIn</div>
+            </div>
+          </article>
+
+          <article class="quote-card" data-reveal>
+            <p class="quote-text">&ldquo;Noel is very competent and easy to work with. He always communicates and comes up with some great suggestions. I would recommend Noel to any other employer requiring a first class freelancer.&rdquo;</p>
+            <div class="quote-meta">
+              <div class="quote-author">Lynne Locke</div>
+              <div class="quote-role">CEO — Shoalhaven City Turf Club, Australia · Taken from Upwork</div>
+            </div>
+          </article>
+          </div>
+
+          <div class="roster-grid">
+          <article class="roster-card" data-reveal>
+            <h3 class="roster-title">Government &amp; Non-Profit</h3>
+            <ul class="roster-list">
+              <li>National Commission for Culture and the Arts (PH)</li>
+              <li>Asian Development Fund (PH)</li>
+              <li>Bagong Lumad Artists Foundation Inc. (PH / UNDP)</li>
+              <li>Erehwon Center for the Arts (PH)</li>
+              <li>Daloy ng Buhay, Inc. (PH)</li>
+            </ul>
+          </article>
+
+          <article class="roster-card" data-reveal>
+            <h3 class="roster-title">Corporate &amp; Business Clients</h3>
+            <ul class="roster-list">
+              <li>Williamson-Dickie Mfg. Co. (Dickies, USA)</li>
+              <li>Anheuser-Busch (Budweiser, USA)</li>
+              <li>Carpathian Capital Management (USA)</li>
+              <li>DD Apparel LLC (USA)</li>
+              <li>3G&#x27;s Vino LLC (USA)</li>
+            </ul>
+          </article>
+
+          <article class="roster-card" data-reveal>
+            <h3 class="roster-title">Small Business &amp; Service Providers</h3>
+            <ul class="roster-list">
+              <li>Smile Please Services (Australia)</li>
+              <li>Shoalhaven City Turf Club (Australia)</li>
+              <li>Gypsy Jet Setter Yoga (USA)</li>
+              <li>The Bored Boho (USA)</li>
+              <li>Oliver Logan &amp; Retrospec (USA)</li>
+            </ul>
+          </article>
+          </div>
+
+          <div class="credentials-grid">
+            <article class="credential-card" data-reveal>
+              <div class="credential-top">
+                <div class="credential-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <span class="role-date">2006 – 2012</span>
+              </div>
+              <div>
+                <h3 class="credential-title">B.S. in Information Technology</h3>
+                <p class="credential-org">Informatics International College</p>
+              </div>
+            </article>
+
+            <article class="credential-card" data-reveal>
+              <div class="credential-top">
+                <div class="credential-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <span class="role-date">English &bull; Tagalog &bull; Bisaya</span>
+              </div>
+              <div>
+                <h3 class="credential-title">Licensed Real Estate Broker (PRC-REB #0011812)</h3>
+                <p class="credential-org">Fluent in English &amp; Tagalog; Native Bisaya</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="resume-section" aria-label="Schedule a call">
+      <div class="container section-grid">
+        <div class="section-rail">
+          <span class="section-kicker">05 / Availability</span>
+          <h2 class="section-heading">Book a Time</h2>
+          <p class="section-note">
+            View live availability and book a slot directly, or reach out by email or phone (+63 927 865 2574).
+          </p>
+          <p class="print-booking-fallback">
+            Email: noeljedayala@gmail.com &bull; Phone: +63 927 865 2574 &bull; Booking: https://calendar.app.google/Q2oPX485GmtjhGrF7
+          </p>
+          <div class="booking-actions">
+            <a
+              class="btn btn-secondary"
+              href="https://calendar.app.google/Q2oPX485GmtjhGrF7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>Open in New Tab</span>
+            </a>
+            <a class="btn btn-secondary" href="mailto:noeljedayala@gmail.com">
+              <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span>noeljedayala@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="calendar-embed-card" data-reveal>
+          <div class="calendar-embed-head">
+            <span class="manifest-title">Google Calendar // Appointment Schedule</span>
+            <span class="manifest-badge">Live Slots</span>
+          </div>
+          <div class="calendar-frame-wrap">
+            <iframe
+              class="calendar-iframe"
+              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2XO7GI3LntbHEulO68_33mlqqtU74pimPQ8VeTuUrTK0xz6ShaPnKzOOGsl75nATmoC44oPDFs?gv=true"
+              title="Noel Ayala Google Calendar Appointment Schedule"
+              width="100%"
+              height="640"
+              style="border: 0; background-color: #FFFFFF;"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="resume-section contact-section" aria-label="Contact form">
+      <div class="container section-grid">
+        <div class="section-rail">
+          <span class="section-kicker">06 / Contact</span>
+          <h2 class="section-heading">Send a Message</h2>
+          <p class="section-note">
+            Prefer async? Send a message directly to my inbox at noeljedayala@gmail.com.
+          </p>
+        </div>
+
+        <div class="contact-form-card" data-reveal>
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formsubmit.co/noeljedayala@gmail.com"
+            method="POST"
+          >
+            <input type="text" name="_honey" style="display: none;" tabindex="-1" autocomplete="off" />
+            <input type="hidden" name="_subject" value="New message from Noel Ayala — Graphic Design Site" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="form-row-2">
+              <div class="form-field">
+                <label class="form-label" for="contact-name">Name</label>
+                <input
+                  id="contact-name"
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="contact-email">Email</label>
+                <input
+                  id="contact-email"
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input
+                id="contact-subject"
+                class="form-input"
+                type="text"
+                name="subject"
+                placeholder="Graphic design project, brand kit, or campaign inquiry"
+              />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                class="form-textarea"
+                name="message"
+                placeholder="Share a brief overview, timeline, or question..."
+                required
+              ></textarea>
+            </div>
+
+            <div id="contact-form-status" class="form-status" role="status" aria-live="polite" hidden></div>
+
+            <div class="form-actions">
+              <button id="contact-submit-btn" class="btn btn-primary" type="submit">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Noel Ayala &bull; Tagum City, Philippines &bull; Graphic Design</span>
+      <div class="footer-right">
+        <a class="back-to-top" href="#summary" aria-label="Back to top">
+          <span>Top</span>
+          <svg class="icon icon-sm" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m18 15-6-6-6 6"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="copy-status-live" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>
